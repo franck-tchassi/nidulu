@@ -9,7 +9,6 @@
     "build": "prisma generate && nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
-    "vercel-build": "prisma generate && npm run build",
     "dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "postinstall": "prisma generate",
@@ -51,7 +50,7 @@
     "@nestjs/cli": "^11.0.0",
     "@nestjs/schematics": "^11.0.0",
     "@nestjs/testing": "^11.0.1",
-    
+    "@prisma/client": "^7.3.0",
     "@types/express": "^5.0.6",
     "@types/jest": "^30.0.0",
     "@types/multer": "^2.0.0",
