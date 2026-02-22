@@ -2,6 +2,14 @@
 
 import nodemailer from 'nodemailer';
 
+console.log('Nodemailer env:', {
+  EMAIL_SERVER_HOST: process.env.EMAIL_SERVER_HOST,
+  EMAIL_SERVER_PORT: process.env.EMAIL_SERVER_PORT,
+  EMAIL_SERVER_SECURE: process.env.EMAIL_SERVER_SECURE,
+  EMAIL_SERVER_USER: process.env.EMAIL_SERVER_USER,
+  EMAIL_SERVER_PASSWORD: process.env.EMAIL_SERVER_PASSWORD,
+  EMAIL_FROM: process.env.EMAIL_FROM
+});
 // Configure your email service here.
 // For development, we'll just log to the console.
 // In production, you'd use a service like SendGrid, Mailgun, etc.
